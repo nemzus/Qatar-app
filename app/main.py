@@ -4,7 +4,7 @@ from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 from typing import List
 from rapidfuzz import fuzz
-from .db import get_connection, init_db, DB_PATH
+from db import get_connection, init_db, DB_PATH
 
 app = FastAPI(title='Qatar Price Comparison Free Engine', version='1.0.0')
 app.add_middleware(CORSMiddleware, allow_origins=['*'], allow_credentials=True,
