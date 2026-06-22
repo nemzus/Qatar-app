@@ -1,4 +1,4 @@
-const BASE_URL = import.meta.env.VITE_API_URL || 'https://your-server.example.com';
+const BASE_URL = import.meta.env.VITE_API_URL || 'https://qatar-grocery-app.onrender.com';
 export async function getCheapestPrices(item) {
   const res = await fetch(`${BASE_URL}/search?query=${encodeURIComponent(item)}`);
   if (!res.ok) {
