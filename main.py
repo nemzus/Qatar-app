@@ -7,7 +7,7 @@ from rapidfuzz import fuzz
 from .db import get_connection, init_db, DB_PATH
 
 app = FastAPI(title='Qatar Price Comparison Free Engine', version='1.0.0')
-app.add_middleware(CORSMiddleware, allow_origins=['*'], allow_credentials=True,
+app.add_middleware(CORSMiddleware, allow_origins=['https://qatar-app.onrender.com '], allow_credentials=True,
                    allow_methods=['*'], allow_headers=['*'])
 
 STOP_WORDS = {'fresh','premium','local','imported','promo','offer','pack','size',
